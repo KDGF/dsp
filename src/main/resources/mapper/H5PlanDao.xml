@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mw.mw.dao.H5PlanDao">
+    <select id="findH5PalnListById" parameterType="java.lang.Integer" resultType="com.mw.mw.domain.H5Plan">
+        select * from h5_plan where id = #{id}
+    </select>
+</mapper>
